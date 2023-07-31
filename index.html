@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PlexHosting</title>
+<style>
+/* CSS for pricing table */
+/* Chat containers */
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+}
+.fa-fa-download {
+  background-color: #4e7dff; /* Green */
+  border: blue;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: firebrick;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 16px;
+  font-size: 16px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transition: box-shadow 0.3s ease; box-sizing: 0.3s ease; box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); box
+  box-sizing: flex;
+}
+.btn {
+  background-color: rgb(71, 71, 71);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn:hover {
+  background-color: rgb(55, 129, 61);
+}
+.button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  transition: box-shadow 0.3s ease; box-sizing: 0.3s ease; box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button:hover {
+    background-color: #4e7dff; /* Green */
+    border: blue;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: firebrick;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 16px;
+    font-size: 16px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: box-shadow 0.3s ease; box-sizing: 0.3s ease; box-shadow: 0 10px 20px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); box
+}
+.mydear {
+width: 600%;
+max-width: 1375px;
+margin: 0 20px;
+font-size: 48px;
+font-weight: bold;
+font-display: "Calibri";
+text-align: center;
+transition: box-shadow 0.3s ease;
+}
+.pricing-table {
+width: 100%;
+max-width: 800px;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.pricing-table .fire {
+background-color: red;
+display: flex;
+}
+.pricing-table .column {
+width: 100%;
+max-width: 300px;
+margin: 20px;
+background-color: #fff;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+text-align: center;
+transition: box-shadow 0.3s ease;
+}
+.pricing-table .column:hover {
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.pricing-table .header {
+background-color: #333;
+color: #fff;
+font-size: 24px;
+font-weight: bold;
+padding: 20px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.pricing-table .price {
+font-size: 48px;
+font-weight: bold;
+margin: 20px 0;
+}
+.pricing-table .description {
+font-size: 16px;
+color: #888;
+margin-bottom: 20px;
+}
+.pricing-table .features {
+list-style: none;
+padding: 0;
+margin: 20px 0;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+.pricing-table .features li {
+font-size: 16px;
+
+padding: 10px;
+border-bottom: 1px solid #ccc;
+transition: background-color 0.3s ease;
+}
+.pricing-table .features li:last-child {
+border-bottom: none;
+}
+.pricing-table .features li:hover {
+background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+<div class="mydear">Welcome to Youssite!</div>
+<div class="pricing-table">
+<div class="column">
+<div class="header">About The Creator</div>
+<div class="price">About m</div>
+<div class="description">The Description of Youssef</div>
+<ul class="features">
+<li>Im Youssef</li>
+<li>Youssef is 13 Years Old!</li>
+<li>He Created This Website About 2 Hours</li>
+<li>1 FREE Sub-Domain</li>
+</ul>
+</div>
+<div class="column">
+<div class="header">Free Trial</div>
+<div class="price">Don't touch My Presents</div>
+<div class="description">this pack offers:</div>
+<ul class="features">
+<li>2CPU Cores</li>
+<li>6GB RAM</li>
+<li>20GB Storage</li>
+<li>1 Free Domain</li>
+<li>FTP Access</li>
+</ul>
+</div>
+<div class="column">
+<div class="header">hacker</div>
+<div class="price">$69.99/month</div>
+<div class="description">This pack offers:</div>
+<ul class="features">
+<li>8CPU Cores</li>
+<li>16GB RAM</li>
+<li>50GB Storage</li>
+<li>1 Free Domain</li>
+<li>FTP Access</li>
+<li class="fire">2 Supporters to help create your server!</li>
+<li>24/7 support</li>
+</ul>
+</div>
+</div>
+<div class="mydear"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<button class="button"><i class="fa fa-download"></i> Download Now</button></div>
+</body>
+</html>
